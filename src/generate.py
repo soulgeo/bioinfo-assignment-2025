@@ -21,7 +21,7 @@ def generate_string():
         mutated = p
         b_count = randint(b_min, b_max)
         for _ in range(0, b_count):
-            idx = randint(1, len(mutated) - 1)
+            idx = randint(0, len(mutated) - 1)
             mutated = (
                 mutated[:idx] + alphabet[randint(0, 4)] + mutated[idx + 1 :]
             )
